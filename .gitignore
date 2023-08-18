@@ -1,0 +1,11 @@
+# Blacklist everything
+*
+
+# Whitelist subdirectory contents
+!*/
+
+# Track specific file format
+!*R
+!*ignore
+!*lock
+!*profile
