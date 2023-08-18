@@ -1,0 +1,3 @@
+# What to do here?
+
+Directory contains two sub-directories, that is `processed` and `raw`. I use the `raw` directory to keep all of my raw data, usually in a `csv`, `tsv`, or `json` format. The data stored here is open to public, while other restricted data are sometimes available on request. Data availability will be mentioned in the README file, please check the root directory of this repository. Contents of the `processed` folder are mostly the secondary product of my analysis or feature-engineered data.
