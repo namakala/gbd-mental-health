@@ -1,0 +1,11 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+.Random.seed|object|522297be780490f4|||||||||||||||
+findCol|function|64cf6626e390a198|||||||||||||||
+funs|object|54a7f6b5c6480e4c|||||||||||||||
+gbd_file|stem|700c1b25b28f1178|ae5389a2013e4a58|cc75b8c9801a8a7a|-1997919667|data/raw/gbd-mental-illness.csv|t19586.5998161062s|a12c8ae8d5e99eac|465986|file|local|vector|||0.352||
+parseGBD|function|4bbec38bded90b7b|||||||||||||||
+pkgs|object|ef760a8436ff3ca1|||||||||||||||
+readGBD|function|4e5d16cf24f0be93|||||||||||||||
+tbl_gbd|stem|1e42deb72f58558b|31cb3e27547a25cb|b6e3320d20dc8515|1305792118||t19586.8676948961s|2b419aa822711029|5705|rds|local|vector|||0.224||
+tbls|object|8fe7bd94f901fe04|||||||||||||||
+transformGBD|function|3768cff3b2cd0477|||||||||||||||
