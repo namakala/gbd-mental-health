@@ -1,12 +1,17 @@
 # Blacklist everything
 *
 
-# Whitelist subdirectory contents
+# Whitelist directory contents
 !*/
 
-# Track specific file format
+# Track specific filetypes
 !*R
-!*ignore
+!*py
+!*sql
+!*sh
+!*md
 !*lock
-!*profile
 !LICENSE
+!*ignore
+!*profile
+!README*
