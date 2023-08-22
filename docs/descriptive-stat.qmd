@@ -1,0 +1,65 @@
+---
+title: Global Burden of Mental Illnesses
+subtitle: Descriptive Statistics Report
+author: Aly Lamuri
+format: pdf
+bibliography: ref.bib
+knitr:
+  opts_chunk:
+    comment: "|"
+    echo: false
+    error: false
+    warning: false
+    message: false
+---
+
+```{r init}
+
+pkgs <- c("magrittr", "targets", "gtsummary")
+pkgs_load <- sapply(pkgs, library, character.only = TRUE)
+
+```
+
+This descriptive statistics on global burden of mental illnesses is reproduced from @owidmentalhealth, where the primary source of data was from the Global Burden of Disease (GBD). This dataset contains 30-year global data from 1990 to 2019 with two mental illness metrics: disability-adjusted life year (DALY) and prevalence. Mental illnesses of interest in this dataset are depressive disorder, anxiety disorder, schizophrenia, bipolar disorder, and eating disorder. @tbl-summary describes the univariable statistics, presented as mean and standard deviation as grouped by the country-level of income. It is notable that each level of income has different prevalence and DALY for mental illnesses. Interestingly, the pairwise correlation between DALY and prevalence, as shown in @tbl-cor-gbd-1 to [-@tbl-cor-gbd-4], indicated different patterns among all level of incomes.
+
+```{r}
+#| label: tbl-summary
+#| tbl-cap: Descriptive statistics of mental health indicators from GBD dataset
+
+tar_read(gbd_report)
+
+```
+
+```{r}
+#| label: tbl-cor-gbd-1
+#| tbl-cap: Pairwise correlation of mental illnesses metrics in high-income countries
+tar_load(gbd_cor)
+knitr::kable(gbd_cor$high_income)
+
+```
+
+```{r}
+#| label: tbl-cor-gbd-2
+#| tbl-cap: Pairwise correlation of mental illnesses metrics in middle-income countries
+
+knitr::kable(gbd_cor$middle_income)
+
+```
+
+```{r}
+#| label: tbl-cor-gbd-3
+#| tbl-cap: Pairwise correlation of mental illnesses metrics in lower middle-income countries
+
+knitr::kable(gbd_cor$lower_middle_income)
+
+```
+
+```{r}
+#| label: tbl-cor-gbd-4
+#| tbl-cap: Pairwise correlation of mental illnesses metrics in low-income countries
+
+knitr::kable(gbd_cor$low_income)
+
+```
+
+# References {-}
