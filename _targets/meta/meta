@@ -1,5 +1,5 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
-.Random.seed|object|262f551f373506c9|||||||||||||||
+.Random.seed|object|e0253089f7f7c92f|||||||||||||||
 cleanGroup|function|df6e5d84b4f3981d|||||||||||||||
 cleanViz|function|bb26bedb6b63863a|||||||||||||||
 corSummary|function|e064bdc41e0102d3|||||||||||||||
@@ -9,6 +9,7 @@ findCol|function|64cf6626e390a198|||||||||||||||
 funs|object|24806a62b002a88e|||||||||||||||
 gbd_cor|stem|78255493f920c70d|f07016f85953c3eb|6307a5a8653e8aab|1186522319||t19591.8483120019s|612c154228541a0f|944|rds|local|vector|||0.158||
 gbd_data|object|1ab6423dd1ade2ca|||||||||||||||
+gbd_describe|stem|6828e0b160f76eca|acd6528634d7a540|76a6c3d0ee845539|1479874471||t19593.3475025999s|2ed1ce424474d963|2310|rds|local|vector|||0.03||
 gbd_report|stem|bc404ca2037c75a3|c1e9fe207facbb4a|c984ef3a47acc503|1443344612||t19591.9167188646s|5804f0d9761a796e|792|rds|local|vector|||3.261||
 gbd_summary|stem|6828e0b160f76eca|acd6528634d7a540|76a6c3d0ee845539|-1824963018||t19590.5529329738s|2ed1ce424474d963|2310|rds|local|vector|||0.033||
 groupCor|function|7f1bf7cfeb515916|||||||||||||||

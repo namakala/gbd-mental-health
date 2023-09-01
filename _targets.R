@@ -26,7 +26,7 @@ list(
       tbls[["psych-prev"]],
       by = c("group", "ctry_code", "year"))
   ),
-  tar_target(gbd_summary, groupSummary(merge_tbl, "group")),
+  tar_target(gbd_describe, groupSummary(merge_tbl, "group")),
   tar_target(gbd_report, tblSummary(merge_tbl)),
   tar_target(gbd_cor, groupCor(merge_tbl, "group") %>% lapply(corSummary)),
   tar_target(viz_daly, swarmVizGBD(tbls[["psych-daly"]])),
